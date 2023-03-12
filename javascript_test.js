@@ -1,6 +1,5 @@
 //ask for player choise
-let playerInput = prompt("Rock, Paper, or Scissors?:")
-console.log(playerInput)
+
 
 //generate computer choise
 const computerOptions = ["rock","paper","scissors"]
