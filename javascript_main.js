@@ -58,13 +58,3 @@ function count(){
         }
         else(x == null)
 }
-
-    for (let i = 0; i < 5; i++) {
-        computerSelection = getComputerChoise()
-        playerSelection = getPlayerChoise()
-        playRound()
-        count()
-        console.log("Win:"+win)
-        console.log("Loses:"+lose)
-        console.log("Ties:"+tie)
-     }
