@@ -6,7 +6,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 40px;
-    background-image: url(360_F_296299593_CjbC8w9t6WNBOUfvfVsf6DIfkmkIzku2.jpg);
+    background-image: url(pics/360_F_296299593_CjbC8w9t6WNBOUfvfVsf6DIfkmkIzku2.jpg);
     background-size: 100%;
     text-shadow: 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white; 
 }
@@ -41,19 +41,19 @@ button{
 
 }
 #rock{
-        background-image:url(stone-576566_960_720.png);
+        background-image:url(pics/stone-576566_960_720.png);
         background-size: 200px 200px;
         width: 200px;
         height: 200px;
 }
 #paper{
-    background-image:url(note-papier3.png);
+    background-image:url(pics/note-papier3.png);
     background-size: 200px 200px;
     width: 200px;
     height: 200px;
 }
 #scissors{
-    background-image:url(nicubunu_Scissors.png);
+    background-image:url(pics/nicubunu_Scissors.png);
     background-size: 200px 200px;
     width: 200px;
     height: 200px;
