@@ -5,6 +5,8 @@ let x=0
 const computerOptions = ["rock","paper","scissors"]
 let playerSelection = ""
 let computerSelection = ""
+let results = ""
+textScoreChoiceSetUp();
 
 
 
@@ -59,15 +61,30 @@ function count(){
             lose++
         }
         else(x == null)
+    }
+function wlt(){
+    if (x == 1){
+        return results = "It's a Tie"
+        }
+            else if (x == 2){
+                return results = "You Win!"
+            }
+            else if(x == 3){
+                return results = "You lose...:("
+            }
+            else(x == null)
 }
-function textUpdate(){
+
+function textScoreChoiceSetUp(){
 const winCount = document.querySelector('.winCount');
 
 const contentWin = document.createElement('div');
 contentWin.classList.add('content');
 contentWin.textContent = win;
 
+
 winCount.appendChild(contentWin);
+
 
 const loseCount = document.querySelector('.lossCount');
 
@@ -100,8 +117,76 @@ contentComputer.classList.add('content');
 contentComputer.textContent = computerSelection;
 
 choiceComputer.appendChild(contentComputer);
+
+const result = document.querySelector('#results');
+
+const resultTxt = document.createElement('div');
+resultTxt.classList.add('content');
+resultTxt.textContent = results;
+
+result.appendChild(resultTxt);
 }
 
+function textUpdate(){
+
+    
+
+    const winCount = document.querySelector('.winCount');
+    
+    const contentWin = document.createElement('div');
+    contentWin.classList.add('content');
+    contentWin.textContent = win;
+    
+    
+    winCount.appendChild(contentWin);
+    winCount.removeChild(winCount.firstElementChild);
+    
+    
+    const loseCount = document.querySelector('.lossCount');
+    
+    const contentLose = document.createElement('div');
+    contentLose.classList.add('content');
+    contentLose.textContent = lose;
+    
+    loseCount.appendChild(contentLose);
+    loseCount.removeChild(loseCount.firstElementChild);
+    
+    const tieCount = document.querySelector('.tieCount');
+    
+    const contentTie = document.createElement('div');
+    contentTie.classList.add('content');
+    contentTie.textContent = tie;
+    
+    tieCount.appendChild(contentTie);
+    tieCount.removeChild(tieCount.firstElementChild);
+    
+    const choicePlayer = document.querySelector('#player');
+    
+    const contentPlayer = document.createElement('div');
+    contentPlayer.classList.add('content');
+    contentPlayer.textContent = playerSelection;
+    
+    choicePlayer.appendChild(contentPlayer);
+    choicePlayer.removeChild(choicePlayer.firstElementChild);
+    
+    const choiceComputer = document.querySelector('#computer');
+    
+    const contentComputer = document.createElement('div');
+    contentComputer.classList.add('content');
+    contentComputer.textContent = computerSelection;
+    
+    choiceComputer.appendChild(contentComputer);
+    choiceComputer.removeChild(choiceComputer.firstElementChild);
+    
+    const result = document.querySelector('#results');
+
+    const resultTxt = document.createElement('div');
+    resultTxt.classList.add('content');
+    resultTxt.textContent = results;
+
+    result.appendChild(resultTxt);
+    result.removeChild(result.firstElementChild);
+    }
 document.getElementById("rock").addEventListener("click", myFunctionRock);
 document.getElementById("paper").addEventListener("click", myFunctionPaper);
 document.getElementById("scissors").addEventListener("click", myFunctionScissors);
@@ -112,6 +197,7 @@ function myFunctionRock(){
     getPlayerChoice("rock");
     playRound();
     count();
+    wlt();
     textUpdate();
 }
 function myFunctionPaper(){
@@ -119,6 +205,7 @@ function myFunctionPaper(){
     getPlayerChoice("paper");
     playRound();
     count();
+    wlt();
     textUpdate();
 }
 function myFunctionScissors(){
@@ -126,5 +213,6 @@ function myFunctionScissors(){
     getPlayerChoice("scissors");
     playRound();
     count();
+    wlt();
     textUpdate();
 }

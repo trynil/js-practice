@@ -5,14 +5,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
     font-size: 40px;
     background-image: url(360_F_296299593_CjbC8w9t6WNBOUfvfVsf6DIfkmkIzku2.jpg);
     background-size: 100%;
     text-shadow: 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white; 
 }
 div{
-    padding-top: 25px;
+    padding-top: 15px;
 }
     #scoreTitle{
         display: flex;
