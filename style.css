@@ -5,4 +5,57 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: 50px;
+    font-size: 40px;
+    background-image: url(360_F_296299593_CjbC8w9t6WNBOUfvfVsf6DIfkmkIzku2.jpg);
+    background-size: 100%;
+    text-shadow: 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white; 
+}
+div{
+    padding-top: 25px;
+}
+    #scoreTitle{
+        display: flex;
+        justify-content: center;
+    }
+        #WLT{
+            display: flex;
+            justify-content: space-evenly;
+            width: 600px;
+
+
+        }
+    #choices{
+        display: flex;
+        justify-content: space-evenly;
+        width: 600px;
+    }
+    #options{
+        display: flex;
+        justify-content: space-evenly;
+        width: 1000px;
+    }
+
+button{
+    font-size: 40px;
+    text-shadow: 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white; 
+
+}
+#rock{
+        background-image:url(stone-576566_960_720.png);
+        background-size: 200px 200px;
+        width: 200px;
+        height: 200px;
+}
+#paper{
+    background-image:url(note-papier3.png);
+    background-size: 200px 200px;
+    width: 200px;
+    height: 200px;
+}
+#scissors{
+    background-image:url(nicubunu_Scissors.png);
+    background-size: 200px 200px;
+    width: 200px;
+    height: 200px;
 }

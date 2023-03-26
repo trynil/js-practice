@@ -3,28 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Rock Paper Scissors</title>
-  <script src="javascript_test.js" defer></script>
+  <script src="javascript_main.js" defer></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<!-- your HTML file: -->
 <body>
   <div id="score">
-    <p>Score</p>
-    <div id="win">Wins:</div>
-    <div id="loses">Loses:</div>
-    <div id="ties">Ties:</div>
+    <div id="scoreTitle">Score</div>
+    <div id="WLT">
+      <div id="win">Wins:<div class="winCount"></div></div>
+      <div id="loses">Loses:<div class="lossCount"></div></div>
+      <div id="ties">Ties:<div class="tieCount"></div></div>
+    </div>
   </div>
 
   <div id="options">
-    <button id="1">Rock</button>
-    <button id="2">Paper</button>
-    <button id="3">Scissors</button>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
   </div>
+  <p>Choices</p>
   <div id="choices">
-    <p>Choices</p>
     <div id="player">Player:</div>
     <div id="computer">Computer:</div>
-    <div id="results">Result:</div>
   </div>
+  <div id="results">Result:</div>
 </body>
 </html>
